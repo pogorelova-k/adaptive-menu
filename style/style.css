@@ -1,0 +1,98 @@
+/* start style */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+
+    background-color: #ccc;
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    line-height: 1;
+}
+
+button, input {
+    font: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3, p, ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* container */
+
+.container {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 30px 15px;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+/* при работе с float */
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* end start style */
+
+.header {
+    background-color: #fff;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+
+.menu__list {
+    display: flex;
+    align-items: center;
+}
+
+.menu__item {
+    margin-right: 20px;
+}
+
+.menu__burger {
+    margin-left: auto;
+}
